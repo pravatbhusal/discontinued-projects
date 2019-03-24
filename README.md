@@ -1,2 +1,2 @@
-# discontinued-archives
+# Discontinued Archives
 An archive of my discontinued repositories that did not make it to my public GitHub.
