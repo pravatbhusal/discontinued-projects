@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.HeaderLogo {
+			width: 300px;
+			height: 50px;
+			background: url(images/logo.png) no-repeat;
+		}
+		.NaviButton{
+			font-size: 14px;
+			font-weight: bold;
+			background:url(images/header/navi_button_bg.png) no-repeat;
+			padding-top: 10px;
+			margin-right: 5px;
+			text-align: center;
+			color: #000000;
+			width: 71px;
+			height: 32px;
+		}
+		.NaviFrame{
+			width: 700px; height: 100%; position: absolute; left: 660px; top: 50px; display: none;
+		}
+		.overlay{
+			height: 0%;
+			width: 100%;
+			//display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			background-color:rgb(0,0,0);
+			background-color: rgba(0,0,0, 0.9);
+			overflow-x: hidden;
+			transition: 0.5s;
+		}
+		.overlayClose{
+			position: absolute;
+			top: 20px;
+			right: 45px;
+			
+		}
+	</style>
+  </head>
+  <body>
+	<span class="glyphicon glyphicon-menu-hamburger" onClick="document.getElementById('navigation').style.height = '100%';"></span>
+	<div id="navigation" class="overlay">
+		
+		<table cellpadding="0" cellspacing="0" style="position: absolute; left: 0px; top: 0px;">	
+			<tr>
+				<td>
+					<div class="HeaderLogo">
+					</div>
+				</td>
+				<td>
+					<!-- Tabs here -->
+					<table style="margin-left: 80px;">
+						<tr>
+							<td>
+								<div class="NaviButton me" onclick="frameOpen('/stuff')">
+									Me
+								</div>
+							</td>
+							<td> 
+								<div class="NaviButton stuff">
+									Stuff
+								</div>
+							</td>
+							<td>
+								<div class="NaviButton games">
+									Games
+								</div>
+							</td>
+							<td>
+								<div class="NaviButton rooms"id="NavRooms">
+									Rooms
+								</div>
+							</td>
+							<td>
+								<div class="NaviButton" id="NavShop">
+									Shop
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<span onclick="document.getElementById('navigation').style.height = '0%';" class="overlayClose"><img src="images/ui/close.png"></img></span>
+	</div>
+  </body>
+  <footer>
+  </footer
+</html>

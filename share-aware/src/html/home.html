@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9AE4E8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	.msidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9AE4E8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.msidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.msidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.msidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .msidenav {padding-top: 15px;}
+  .msidenav a {font-size: 18px;}
+}
+	.data{
+		align: center;
+		border-radius: 5px;
+			
+	}
+	h1{
+		font-size: 20px;
+		color:#0F6E6F;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1>Registration</h1>
+  <form action="Register.php" method="post"><table><tr><td><input type="text" size="10" class="data" name= "FirstName" placeholder="First Name" required> </td></tr>
+  <tr><td><input type="text" size="15" class="data" name= "LastName" placeholder="Last Name" required> </td></tr>
+  <tr><td><input type="text" size="10" name= "Email" class="data" placeholder="Email" required> </td></tr>
+  <tr><td><input type="password" size="10" class="data" name= "Password" placeholder="Password" required> </td></tr>
+  <tr><td><input type="text" size="30" class="data" name= "AboutMe" placeholder="About Me" required> </td></tr>
+  <tr><td><input type="text" size="20" class="data" name= "Volunteering" placeholder="Volunteering" > </td></tr>
+	  <tr><td><input type="text" size="10" class="data" name= "Causes" placeholder="Causes"> </td></tr> <tr><td><input type="text" size="10" class="data" name= "Contacts" placeholder="Contact Number" required> 
+  </td></tr>
+  <tr>
+  	<td><input type="submit" name="submit" value="Register"</td>
+	  </tr></table></form>
+</div>
+<div id="Logistuff" class="msidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closestuff()">&times;</a>
+	<h1>Login</h1>
+<form action="Login&Load.php" method="post">
+	<table><tr><td>
+		<input type="text" size="10" class="data" name= "Email" placeholder="Email Address"> </td></tr>
+	<tr><td>
+		<input type="password" size="10" class="data" name= "Password" placeholder="Password"></td></tr></table>
+		 <tr>
+  	<td><input type="submit" name="submit" value="Login"</td>
+	  </tr>
+</form>
+</div>
+<form>
+	<tr><td><td colspan="2" class="center">
+<input type="button" value= "Register" class= "button" onclick="openNav()">&nbsp;&nbsp;&nbsp;<input type="button" value= "Login" class= "button" onclick="Loginstuff()"></td></tr>
+</form>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+	function Loginstuff() {
+    document.getElementById("Logistuff").style.width = "250px";
+}
+
+function closestuff() {
+    document.getElementById("Logistuff").style.width = "0";
+}
+</script>
+     
+</body>
+</html> 

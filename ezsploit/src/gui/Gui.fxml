@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mainController">
+   <children>
+      <Button fx:id="startDOS" layoutX="11.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="147.0" text="Start DOS" />
+      <TextField fx:id="typeDOSURL" layoutX="159.0" layoutY="65.0" prefHeight="25.0" prefWidth="366.0" promptText="Enter URL or IP Address of victim here..." />
+      <Button fx:id="stopDOS" layoutX="11.0" layoutY="90.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="147.0" text="Stop DOS" />
+      <Text fx:id="waterMark" fill="#9a0a0a" layoutX="4.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EZSploit created by Shadowsych (www.github.com/Shadowsych)" wrappingWidth="528.75390625" />
+      <TextArea fx:id="resultMessages" editable="false" layoutX="12.0" layoutY="2.0" prefHeight="63.0" prefWidth="513.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <RadioButton fx:id="ipDOS" layoutX="167.0" layoutY="94.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="100.0" text="IP Address" />
+      <RadioButton fx:id="urlDOS" layoutX="270.0" layoutY="94.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="URL" />
+      <Button fx:id="createAPK" layoutX="12.0" layoutY="134.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Create APK" />
+      <TextField fx:id="typeAPK" layoutX="102.0" layoutY="134.0" prefHeight="25.0" prefWidth="366.0" promptText="Type name of APK here... (do not include .apk)" />
+      <Button fx:id="helpAPK" layoutX="468.0" layoutY="134.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Help?" />
+   </children>
+</Pane>

@@ -1,0 +1,17 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.6">
+  <id>com.pozirk.AndroidInAppPurchase</id>
+  <versionNumber>1</versionNumber>
+  <platforms>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libInAppPurchase.jar</nativeLibrary>
+        <initializer>com.pozirk.payment.Extension</initializer>
+        <finalizer>com.pozirk.payment.Extension</finalizer>
+      </applicationDeployment>
+    </platform>
+		
+		<platform name="default">
+			<applicationDeployment/>
+    </platform> 
+  </platforms>
+</extension>

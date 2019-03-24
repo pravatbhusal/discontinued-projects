@@ -1,0 +1,17 @@
+ArrayList<String> test = new ArrayList<String>();
+test.add("Hello");
+test.add(0, "World");
+test.add(0, "Yes");
+test.set(2, "Sure"); //replaces "Yes" with "Sure"
+//test.set(55, "This DOES NOT work!");
+System.out.println(test.get(0));
+System.out.println(test.get(1));
+System.out.println(test.get(2));
+	
+	
+/*
+outputs:
+Hello
+World
+Sure
+*/
