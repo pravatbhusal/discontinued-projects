@@ -1,4 +1,4 @@
-![Alt text](/discontinued-Projects/ezsploit/rsrc/icon.png)
+![EZ Sploit Icon](rsrc/icon.png)
 # EZSploit Overview
 This project is now discontinued. It was too much to program within Kali Linux, but it's still useful to 
 look into for certain technologies.
